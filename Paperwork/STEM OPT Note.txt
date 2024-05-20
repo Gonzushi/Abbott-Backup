@@ -1,0 +1,90 @@
+OPT Expiration = May 25, 2022
+OPT Aplication = Feb 24, 2022 - Jul 24, 2022
+OPT Aplication ISSS = Feb 24, 2022
+
+Starting Job = Aug 9, 2022
+Unemployment Total = 75 days
+
+EIN number - 223093525 
+E-verify number - 19959
+
+I need this for I-765
+- E-verify number
+- Signature and date Page 5
+- Fill the name on page 7
+
+
+Link 
+- Processing time (I-765 / Potomac Service Center) = https://egov.uscis.gov/processing-times/
+- I-765 Form = https://myaccount.uscis.gov/
+- I-765 Instruction = https://docs.google.com/document/d/1JO-ZjPgeaDi6m-PffxBBPpFtYytZhZEMMxT1VpsnwLc/edit
+- I-983 Form = https://www.ice.gov/doclib/sevis/pdf/i983.pdf
+- I-983 Instructions = https://www.ice.gov/doclib/sevis/pdf/i983Instructions.pdf
+- Sevis Login = https://sevp.ice.gov/opt/
+- I-94 = https://i94.cbp.dhs.gov/I94/#/home
+
+Sevis Login
+- Email = widya003@umn.edu
+- Password = Hw8751677040397!!
+
+Employer ID Number (EIN) -36-0698440
+Number of Full-Time Employees in U.S. -67,000
+North American Industry Classification System (NAICS) code - 325412
+Employer E-verify number - Company ID: 1089934
+
+
+
+
+Document Required for ISSS
+- Done - STEM OPT Workshop Certificate of Completion
+- Wait - Form I-983 Training Plan
+- Done - I-765
+- Done - Uploaded a copy of my OPT EAD
+- Done - Check SEVP (https://sevp.ice.gov/opt/)
+
+STEM Employer Information
+- Employer Name (Company or Organization, this should match the information on page 3 of your I-983)
+- Federal Employer Identification Number (FEIN)
+- Employer E-Verify number (this is required on the I-765)
+- Your job title
+
+Site of Employment (List the address of the location that you will be working at.  This should match the information on page 3 of your I-983.)
+- Street Address 1
+- City
+- State
+- Zip Code
+
+Direct Supervisor Information
+- Supervisor's Last Name
+- Supervisor's First Name
+- Supervisor's Title
+- Supervisor's Email
+- Supervisor's Phone Number
+
+
+USCIS Account
+- Email = hendrywidyanto97@gmail.com
+- Password = Hw8751677
+- Backup code = f98952be83
+- What is your father's mather's maiden name? Marijani
+- What is the name of the first school you attended? Taman Rezeki
+- What is the name of the company of your first paid job? Ecowater Systems LLC
+- What is the country of your ultimate dream vacation? Indonesia
+- What type of work did you do in your first job? Medical Device
+
+
+
+
+Document Required for USCIS
+- One passport-style photo (jpg, jpeg, or png) taken within 30 days of filing your application. You can get photos taken at the UMN Passport OfficeLinks to an external site. in the University International Center (331 17th Ave SE)
+- Most recent electronic I-94 (https://i94.cbp.dhs.gov/I94/#/home)
+- Your most recent EAD and biographical page of your passport
+- New I-20: page 1 with your signature and page 2 with STEM OPT recommendation
+- UMN diploma and final transcript. Exception: Graduate students who have completed degree requirements except thesis or dissertation should include a transcript and a letter from their advisor clarifying that all course work is complete and the only remaining requirement for degree completion is the thesis/dissertation
+- Have $410 available in your U.S. bank account or U.S. credit card. If your employer will pay the fee, you will need their payment information
+
+Once Received New EAD
+- Report ISSS every 6 months = https://isss.umn.edu/fstudents/employment/opt/stem-opt-extension/requirements
+- Report to SEVP = https://isss.umn.edu/fstudents/employment/opt/stem-opt-extension/sevp
+- Submit STEM OPT Validation Report & Self Evaluation = http://myisss.umn.edu/
+- Annual Report = https://www.ice.gov/sites/default/files/documents/Document/2016/i983.pdf
