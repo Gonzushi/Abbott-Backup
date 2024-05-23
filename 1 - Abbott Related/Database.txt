@@ -1,0 +1,136 @@
+app_usage
+
+create table complaint_form.app_usage
+(
+    name varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    date datetime,
+    id   int identity
+        constraint app_usage_pk
+            primary key
+)
+go
+
+
+event
+
+create table complaint_form.event
+(
+    id                                      int identity
+        constraint event_pk
+            primary key,
+    owner                                   varchar(255) not null collate SQL_Latin1_General_CP1_CI_AS,
+    status                                  varchar(255) not null collate SQL_Latin1_General_CP1_CI_AS,
+    riReportingAbbottEmployee               varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    riAbbottAwareDate                       date,
+    riMethodReportedToAbbott                varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    riMethodRepotedToAbbottOther            varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    riReportedByPatientOrRelative           varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    riPatientOrRelativeName                 varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    riPatientOrRelativePhoneNumber          varchar(40) collate SQL_Latin1_General_CP1_CI_AS,
+    riPatientOrRelativeAddress              varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    riPatientOrRelativeFax                  varchar(40) collate SQL_Latin1_General_CP1_CI_AS,
+    riPatientOrRelativeEmail                varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    aiAccount                               varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    aiHospital                              varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    aiSapReplacementTransaction             varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    aiShipToAccount                         text collate SQL_Latin1_General_CP1_CI_AS,
+    aiAccountContactName                    varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    aiPhysician                             varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    aiAccountContact                        varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    aiNonAbbottReporter                     varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    aiOtherAccountInfo                      text collate SQL_Latin1_General_CP1_CI_AS,
+    edLegal                                 varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    edFullEvaluation                        varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    edPhysicianCutomerLetter                varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    edSpecialRequests                       varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    edDateOfEvent                           date,
+    edReportedEventDetails                  text collate SQL_Latin1_General_CP1_CI_AS,
+    edDeviceImplantDates                    date,
+    edDeviceExplantDates                    date,
+    sapProductNumber                        varchar(50) collate SQL_Latin1_General_CP1_CI_AS,
+    sapQuantity                             int,
+    sapAttentionTo                          varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    sapPurchaseOrderNumber                  varchar(50) collate SQL_Latin1_General_CP1_CI_AS,
+    sapReplacementType                      varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    piPatientInvolved                       varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    piDateOfBirth                           date,
+    piDateOfBirthNull                       varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    piAge                                   int,
+    piAgeUnitOfMeasure                      varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    piWeight                                int,
+    piWeightUnitOfMeasure                   varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    piRace                                  varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    piGenderFdaSex                          varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    piRelevantMedicalHistory                text collate SQL_Latin1_General_CP1_CI_AS,
+    piRelevantTestLabData                   text collate SQL_Latin1_General_CP1_CI_AS,
+    piProcedureDate                         date,
+    piMedicationPrescribedAfterProcedure    text collate SQL_Latin1_General_CP1_CI_AS,
+    piEthnicity                             varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    ftaDidAnyDeviceCrossTheLesion           varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    ftaFailureToCrossDueToAnatomy           varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    ftaFailureToCrossOtherDeviceOrProc      varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    ftaPatientInjuryDueToFailureToCross     varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    ftaDelayDueToFailureToCross             varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    ftaFailureToCrossDeviceInteraction      varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    ftaWasALetterRequested                  varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    viVesselTreated                         varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    viVesselCalcification                   varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    viVesselTortuosity                      varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    viVesselLesionHistory                   varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    viVesselThrombus                        varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    viVesselPreStenosisPercent              varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    viVesselPostStenosisPercent             varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    viAdditionalVesselsTreated              text collate SQL_Latin1_General_CP1_CI_AS,
+    vcFemoralAngiogramTaken                 varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcFemoralImagingUsed                    varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcWasPatientAntiCoagulated              varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcAntiCoagulationMedicationUsed         varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcPatientHisotryOfArteriotomyInGroin    varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcWasPhysicianTrained                   varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcPatientPerihperalVascularDiseaseHist  varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcPreCloseTechniqueUsed                 varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcUpsizedProceduralSheath               varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcPhysicianEstablishedInPreCloseProc    varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    vcNumberOfDevicesUsedForPreClose        int,
+    vcProceduralSheathAndSize               varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcPhysicianExperience                   varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcEchsonographerExperience              varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcDeviceOperatorFormallyTrained         varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcValve                                 varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcValveOther                            varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcMrPreProcedure                        varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcMrPostProcedure                       varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcPathology                             varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcPathologyOther                        varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcEtiologyOfMr                          varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcLocationOfJetsBeforeImplant           varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcLocationOfJetsAfterImplant            varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcMrBeforeClipDeployment                varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcMrAfterClipDeployment                 varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcOrderOfClipsImplantedDuringProcedure  varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcPositionOfRelativeToOtherImplants     varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    mcNumberOfClipsImplantedDuringProcedure varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    submittedDate                           datetime,
+    lastUpdate                              datetime
+)
+go
+
+
+event_devices
+
+create table complaint_form.event_devices
+(
+    id                 int identity
+        constraint event_devices_pk
+            primary key,
+    lotNumber          varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    partNumber         varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    productDescription varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    serialNumber       varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    eventId            int,
+    owner              varchar(255) collate SQL_Latin1_General_CP1_CI_AS,
+    submittedDate      datetime,
+    lastUpdate         datetime,
+    bucket             varchar(255) collate SQL_Latin1_General_CP1_CI_AS
+)
+go
